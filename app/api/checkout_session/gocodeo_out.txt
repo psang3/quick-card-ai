@@ -1,0 +1,22 @@
+FAIL ./GoCodeo-route.POST.test_POST_undefined.test.js
+  × It should create a checkout session with mode set to subscription (3 ms)
+
+  ● It should create a checkout session with mode set to subscription
+
+    ReferenceError: POST is not defined
+
+    [0m [90m  9 |[39m 			}[33m,[39m
+     [90m 10 |[39m 		}[33m;[39m
+    [31m[1m>[22m[39m[90m 11 |[39m 		[36mconst[39m response [33m=[39m [36mawait[39m [33mPOST[39m(req)[33m;[39m
+     [90m    |[39m 		                 [31m[1m^[22m[39m
+     [90m 12 |[39m 		[36mconst[39m session [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m
+     [90m 13 |[39m 		expect(session[33m.[39mmode)[33m.[39mtoBe([32m'subscription'[39m)[33m;[39m
+     [90m 14 |[39m 	})[33m;[39m[0m
+
+      at Object.<anonymous> (GoCodeo-route.POST.test_POST_undefined.test.js:11:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        1.692 s, estimated 2 s
+Ran all test suites matching /GoCodeo-route.POST.test_POST_undefined.test.js/i.
